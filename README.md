@@ -1,6 +1,6 @@
-# Project Kafka/Spark
+# Project Kafka/Spark (Drones data)
 
-## Instructions
+## Project instructions
 
 Your project is to imagine drone/mobile IOT devices and create it's big data architecture.
 Write your code in Scala.
@@ -50,6 +50,8 @@ Attention, this project uses submodule git, after having clone the project you m
 
 - `git submodule init`
 - `git submodule update`
+
+# How to run our project ?
 
 ## Kafka part
 
