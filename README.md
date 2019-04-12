@@ -28,6 +28,22 @@ Store all the data sent by every device and be able to answer questions like:
 For this project we decided to work on a fleet of drones. We could be a company that takes care of filming vines so that, with the video data, the winegrower can make a quick analysis of the state of its vines.
 Our goal is to collect information on our drones in real time and to process this information to predict super behaviors, breakdowns, drone losses, ...
 
+## Architecture
+Our project architecture can be divided into 2 parts:
+- Kafka
+- Spark
+
+### kafka
+Kafka can be divided into 2 parts itself:
+- producer: a kafka producer simulates drones sending data at regular interval to our kafka instance
+- consumer: a kafka consumer consumes the data of the kafka instance at regular intervals and writes down data for each drone in a file (eg: "DRONE_2.json" will contain all informations about the drone 2 line by line and is regularly updated by the kafka consumer)
+
+### spark
+COMPLETER BAPTISTE
+
+
+
+
 ## Important part
 
 Attention, this project uses submodule git, after having clone the project you must launch these commands:
@@ -80,8 +96,6 @@ So In general we should launch both (producer then consumer) in 2 different term
 Spark should use those 3 files to make statistics and calculations
 
 ## Spark part
-
-To be complete
 
 ## Authors
 
