@@ -1,0 +1,8 @@
+[submodule "Spark"]
+	path = Spark
+	url = https://github.com/bapt-px/FunctionalDataProg.git
+	branch = master
+[submodule "Kafka"]
+	path = Kafka
+	url = https://github.com/griboue/scala-drones.git
+	branch = master
