@@ -29,20 +29,22 @@ For this project we decided to work on a fleet of drones. We could be a company 
 Our goal is to collect information on our drones in real time and to process this information to predict super behaviors, breakdowns, drone losses, ...
 
 ## Architecture
+
 Our project architecture can be divided into 2 parts:
+
 - Kafka
 - Spark
 
 ### kafka
+
 Kafka can be divided into 2 parts itself:
+
 - producer: a kafka producer simulates drones sending data at regular interval to our kafka instance
 - consumer: a kafka consumer consumes the data of the kafka instance at regular intervals and writes down data for each drone in a file (eg: "DRONE_2.json" will contain all informations about the drone 2 line by line and is regularly updated by the kafka consumer)
 
 ### spark
+
 COMPLETER BAPTISTE
-
-
-
 
 ## Important part
 
@@ -98,6 +100,11 @@ So In general we should launch both (producer then consumer) in 2 different term
 Spark should use those 3 files to make statistics and calculations
 
 ## Spark part
+
+- Run the function `compare` to start to analyse the data.
+- Each function got the data through the `loadData` function that convert all data into the files drone_X.json to `Data` object `compareForTemperature` compare for each data of each drone the altitude, location and speed for different temperatures available, so if an area or the speed affect the temperature, it made it obvious to the showing of the results.
+- `compareForBattery` do the same as before with the speed, trying to determine if the speed affects the battery usage.
+- `isDefaillant` notice if a temperature unnatural is detected hasFall detect if a high speed falling is detected and there is no more data from this drone since this record
 
 ## Authors
 
